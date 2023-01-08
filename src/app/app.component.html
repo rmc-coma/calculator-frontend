@@ -1,0 +1,31 @@
+<div id="calculator">
+  <h3>Calculator</h3>
+  <input type="text" [value]="this.getTerms()" readonly />
+  <table id="keyboard">
+    <tr>
+      <td><button id="b1" (click)="this.addTerm(1);">1</button></td>
+      <td><button id="b2" (click)="this.addTerm(2);">2</button></td>
+      <td><button id="b3" (click)="this.addTerm(3);">3</button></td>
+      <td><button id="bp" (click)="this.addTerm('+');">+</button></td>
+    </tr>
+    <tr>
+      <td><button id="b4" (click)="this.addTerm(4);">4</button></td>
+      <td><button id="b5" (click)="this.addTerm(5);">5</button></td>
+      <td><button id="b6" (click)="this.addTerm(6);">6</button></td>
+      <td><button id="bm" (click)="this.addTerm('-');">-</button></td>
+    </tr>
+    <tr>
+      <td><button id="b7" (click)="this.addTerm(7);">7</button></td>
+      <td><button id="b8" (click)="this.addTerm(8);">8</button></td>
+      <td><button id="b9" (click)="this.addTerm(9);">9</button></td>
+      <td><button id="bt" (click)="this.addTerm('*');">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="bs" (click)="this.addTerm('.');">.</button></td>
+      <td><button id="b0" (click)="this.addTerm(0);">0</button></td>
+      <td><button id="be" (click)="this.calculate()">=</button></td>
+      <td><button id="bd" (click)="this.addTerm('/');">/</button></td>
+    </tr>
+  </table>
+  <button (click)="this.terms = [];">Reset</button>
+</div>
